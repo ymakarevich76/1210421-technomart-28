@@ -10,7 +10,7 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="header__logo logo">
-					<a class="logo__link" href="#">
+					<a class="logo__link" href="#" aria-label="На главную страницу">
 						<img class="logo__img" src="img/header/logo-technomart.svg"  width="108" height="18" alt="Logotype">
 					</a>
 				</div>
@@ -21,7 +21,7 @@
 					<a class="box-bookmark-cart__link" href="#">Закладки: 0</a>
 					<a class="box-bookmark-cart__link" href="#">Корзина: 0</a>
 				</div> <!--/box-bookmark-cart-->
-				<a class="header__order" href="blank.html">Оформить заказ</a>
+				<a class="header__order" href="#">Оформить заказ</a>
 			</div> <!--/container-->
 		</div> <!--/header-top-->
 
@@ -33,8 +33,8 @@
 					<address class="header__contacts-adr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 				</div>
 				<div class="header__box-reg-btn">
-					<a href="blank.html" class="reg-btn">Войти</a>
-					<a href="blank.html" class="reg-btn">Регистрация</a>
+					<a href="#" class="reg-btn">Войти</a>
+					<a href="#" class="reg-btn">Регистрация</a>
 				</div>
 			</div> <!--/header-middle-->
 
@@ -70,7 +70,7 @@
 		<div class="container">
 			<ul class="breadcrumbs">
 				<li>
-					<a class="breadcrumbs__icon" href="index.html"></a>
+					<a class="breadcrumbs__icon" href="index.html" aria-label="На главную страницу"></a>
 				</li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Инструмент</a></li>
@@ -81,50 +81,69 @@
 			</div>
 			<div class="catalog-box">
 				<aside class="catalog-box__left">
-					<form class="filter" action="#">
-						<!--  Пока не знаю как делать этот блог
-						<div class="filter__item">
-							<p class="title-3">Цена:</p>
-							<div class="range-wrap">
-								<input type="range" min="0" max="30000">
-							</div> 
-						</div> -->
-						<div class="filter__item">
-							<p class="title-3">Производители:</p>
-							<div class="checkbox-wrap">
-								<input type="checkbox" id="bosh"><label for="bosh">Bosch</label>
-							</div>
-							<div class="checkbox-wrap">
-								<input type="checkbox" id="interskol"><label for="interskol">Интерскол</label>
-							</div>
-							<div class="checkbox-wrap">
-								<input type="checkbox" id="makita"><label for="makita">Makita</label>
-							</div>
-							<div class="checkbox-wrap">
-								<input type="checkbox" id="dewalt"><label for="dewalt">Dewalt</label>
-							</div>
-							<div class="checkbox-wrap">
-								<input type="checkbox" id="hitachi"><label for="hitachi">Hitachi</label>
-							</div>
-						</div><!--/filter__item-->
-						<div class="filter__item">
-							<p class="title-3">Питание:</p>
-							<div class="radio-wrap">
-								<input type="radio" id="power-1" name="power"><label for="power-1">Аккумуляторные</label>
-							</div>
-							<div class="radio-wrap">
-								<input type="radio" id="power-2" name="power"><label for="power-2">Сетевые</label>
-							</div>
-						</div> <!--/filter__item-->
-						<button class="filter__btn btn">Показать</button>
+			<div class="filter__item">
+				<p class="title-3">Фильтр:</p>
+				<h2 class="filter__title">Цена:</h2>
+				<div class="range-wrap">
+					<div class="range">
+						<div class="range__inner"></div> <!--сам ползунок зеленый с псевдоэлементами-->
+					</div> 
+					<div class="range-wrap__value">
+						<p class="value"><span>0</span> &ndash; <span>30000</span></p>
+					</div>
+				</div> 
+					<form class="filter" action="https://echo.htmlacademy.ru" method="GET"></form>
+						<fieldset class="filter__item">
+							<legend class="title-3">Производители:</legend>
+								<ul>
+									<li class="checkbox-wrap">
+										<input type="checkbox" name="bosh" id="filter-bosh">
+										<label for="filter-bosh">Bosch</label>
+									</li>
+									<li class="checkbox-wrap">
+										<input type="checkbox" name="interskol" id="filter-interskol">
+										<label for="filter-interskol">Интерскол</label>
+									</li>
+									<li class="checkbox-wrap">
+										<input type="checkbox" name="makita" id="filter-makita">
+										<label for="filter-makita">Makita</label>
+									</li>
+									<li class="checkbox-wrap">
+										<input type="checkbox" name="dewalt" id="filter-dewalt">
+										<label for="filter-dewalt">Dewalt</label>
+									</li>
+									<li class="checkbox-wrap">
+										<input type="checkbox" name="hitachi" id="filter-hitachi">
+										<label for="filter-hitachi">Hitachi</label>
+									</li>
+								</ul>
+						</fieldset> <!--/filter__item-->
+
+						<fieldset class="filter__item">
+							<legend class="title-3">Питание:</legend>
+								<ul>
+									<li class="radio-wrap">
+										<input type="radio" name="product-group" value="power-accum" id="filter-power-1">
+										<label for="filter-power-1">Аккумуляторные</label>
+									</li>
+									<li class="radio-wrap">
+										<input type="radio" name="product-group" value="powwer-seti" id="filter-power-2">
+										<label for="filter-power-2">Сетевые</label>
+									</li>
+								</ul>
+						</fieldset><!--/filter__item-->
+						<button type="submit" class="filter__btn btn">Показать</button>
 					</form>
 				</aside>
 				<section class="catalog-box__right">
-					<!-- Пока не знаю как делать этот блог 
 					<div class="sorting">
-						
+						<p class="title-3">Сортировка:</p>
+						<ul>
+							<li><a href="">По цене</a></li>
+							<li><a href="">По типу</a></li>
+							<li><a href="">По функционалу</a></li>
+						</ul>
 					</div>
-					-->
 					<h2 class="visually-hidden">Список товаров</h2>
 					<ul class="products-card">
 						<li class="products-card__item card">
@@ -236,11 +255,17 @@
 							<p class="card__new-price">12500 Р.</p>
 						</li>
 					</ul>
+					<div class="add-to-basket">
+						<p class="add-to-basket__text">Товар добавлен в корзину!</p>
+						<a class="btn" href="blank.html">Оформить заказ</a>
+						<a class="btn btn--white" href="#">Продолжить покупки</a>
+						<button type="button">Закрыть</button>
+					</div>
 					<div class="pagination">
-						<a class="pagination__active" href="#">1</a>
-						<a href="blank.html">2</a>
-						<a href="blank.html">3</a>
-						<a href="blank.html">Следующая</a>
+						<a class="pagination__link pagination__link--active" href="#">1</a>
+						<a class="pagination__link" href="blank.html">2</a>
+						<a class="pagination__link" href="blank.html">3</a>
+						<a class="pagination__link" href="blank.html">Следующая</a>
 					</div>
 				</section>
 			</div>
@@ -262,7 +287,7 @@
 			<div class="container">
 				<div class="footer__top-1">
 					<div class="header__logo logo">
-						<a class="logo__link" href="#">
+						<a class="logo__link" href="#" aria-label="На главную страницу">
 							<img class="logo__img" src="img/footer/logo-technomart.svg" width="108" height="18" alt="Logotype">
 						</a>
 					</div>
@@ -315,13 +340,13 @@
 				</div>
 				<ul class="footer__social social">
 					<li class="social__item">
-						<a class="social__link social__link--vk" href="blank.html"></a>
+						<a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--fb" href="blank.html"></a>
+						<a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--inst" href="blank.html"></a>
+						<a class="social__link social__link--inst" href="#" aria-label="Инстаграм"></a>
 					</li>
 				</ul>
 				

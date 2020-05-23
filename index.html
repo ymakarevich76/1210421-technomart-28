@@ -9,7 +9,7 @@
 		<div class="header__top">
 			<div class="container">
 				<div class="header__logo logo">
-					<a class="logo__link" href="#">
+					<a class="logo__link" href="#" aria-label="На главную страницу">
 						<img class="logo__img" src="img/header/logo-technomart.svg"  width="108" height="18" alt="Logotype">
 					</a>
 				</div>
@@ -20,7 +20,7 @@
 					<a class="box-bookmark-cart__link" href="#">Закладки: 0</a>
 					<a class="box-bookmark-cart__link" href="#">Корзина: 0</a>
 				</div> <!--/box-bookmark-cart-->
-				<a class="header__order" href="blank.html">Оформить заказ</a>
+				<a class="header__order" href="#">Оформить заказ</a>
 			</div> <!--/container-->
 		</div> <!--/header-top-->
 
@@ -32,8 +32,8 @@
 					<address class="header__contacts-adr">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 				</div>
 				<div class="header__box-reg-btn">
-					<a href="blank.html" class="reg-btn">Войти</a>
-					<a href="blank.html" class="reg-btn">Регистрация</a>
+					<a href="#" class="reg-btn">Войти</a>
+					<a href="#" class="reg-btn">Регистрация</a>
 				</div>
 			</div> <!--/header-middle-->
 
@@ -187,42 +187,42 @@
         </div>
         <ul class="vendors">
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Bosch">
               <img class="vendors__img" src="img/vendors/vendor-1.png" width="220" height="145" alt="Bosch">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Makita">
               <img class="vendors__img" src="img/vendors/vendor-2.png" width="220" height="145" alt="Makita">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Dewalt">
               <img class="vendors__img" src="img/vendors/vendor-3.png" width="220" height="145" alt="Dewalt">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Interskol">
               <img class="vendors__img" src="img/vendors/vendor-4.png" width="220" height="145" alt="Interskol">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Hitachi">
               <img class="vendors__img" src="img/vendors/vendor-5.png" width="220" height="145" alt="Hitachi">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="LG">
               <img class="vendors__img" src="img/vendors/vendor-6.png" width="220" height="145" alt="LG">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Makita">
               <img class="vendors__img" src="img/vendors/vendor-7.png" width="220" height="145" alt="Aeg">
             </a>
           </li>
           <li class="vendors__item">
-            <a class="vendors__link" href="blank.html">
+            <a class="vendors__link" href="blank.html" aria-label="Makita">
               <img class="vendors__img" src="img/vendors/vendor-8.png" width="220" height="145" alt="Metabo">
             </a>
           </li>
@@ -316,10 +316,32 @@
 					<div class="map">
 						<img src="img/contacts/map.jpg" width="300" height="158" alt="Карта">
 					</div>
+					<button type="button">Закрыть</button>
 					<button class="btn" type="button">Заблудились? Напишите нам!</button>
 				</div> <!--/contacts-->
 			</div> <!--/container-->
 		</section> <!--/about-company-->
+
+		<!--write-us-->
+		<section class="write-us">
+			<h2 class="visually-hidden">Оформить заказ</h2>
+			<form action="https://echo.htmlacademy.ru" method="POST">
+				<div>
+					<label for="name">Ваше имя:</label>
+					<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				</div>
+				<div>
+					<label for="email">Ваш e-mail:</label>
+					<input type="email" id="email" placeholder="email@example.com">
+				</div>
+				<div>
+					<label for="text">Текст письма:</label>
+					<textarea id="text" placeholder="В свободной форме"></textarea>
+				</div>
+				<button type="submit">Оформить заказ</button>
+			</form>
+			<button type="button">Закрыть</button>
+		</section>
 	</main>
 
 	<footer class="footer">
@@ -327,7 +349,7 @@
 			<div class="container">
 				<div class="footer__top-1">
 					<div class="header__logo logo">
-						<a class="logo__link" href="#">
+						<a class="logo__link" href="#" aria-label="На главную страницу">
 							<img class="logo__img" src="img/footer/logo-technomart.svg" width="108" height="18" alt="Logotype">
 						</a>
 					</div>
@@ -380,13 +402,13 @@
 				</div>
 				<ul class="footer__social social">
 					<li class="social__item">
-						<a class="social__link social__link--vk" href="blank.html"></a>
+						<a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--fb" href="blank.html"></a>
+						<a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
 					</li>
 					<li class="social__item">
-						<a class="social__link social__link--inst" href="blank.html"></a>
+						<a class="social__link social__link--inst" href="#" aria-label="Инстаграм"></a>
 					</li>
 				</ul>
 				
