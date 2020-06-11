@@ -90,11 +90,11 @@
 		<h1 class="visually-hidden">Техномарт</h1>
 
       <!---catalog-->
-    <section class="section"> 
+    <section class="section section--padding-60"> 
       <div class="container">
         <h2 class="visually-hidden">Каталог</h2>
         <div class="catalog-list">
-          <div class="catalog-list__item catalog">
+          <div class="catalog-list__item catalog ">
             <h2 class="catalog__title">Материалы</h2>
             <a href="#" class="catalog__btn">На любой вкус</a>
           </div>
@@ -140,7 +140,7 @@
     </section> <!--/catalog-->
 
     <!--products-card-->
-    <section class="section section--2">
+    <section class="section section--padding-55">
       <div class="container">
         <div class="title-wrap title-wrap--grey">
           <h2 class="title title--grey">Популярные товары:</h2>
@@ -208,7 +208,7 @@
     </section> <!--/products-card-->
 
     <!--vendors-->
-    <section class="section">
+    <section class="section section--padding-61">
       <div class="container">
         <div class="title-wrap title-wrap--grey">
           <h2 class="title title--grey">Популярные производители:</h2>
@@ -280,7 +280,7 @@
 						</ul>
         	</div>
 					<ul class="tab-content-list">
-						<li class="tab-content-list__item tab-content visually-hidden">
+						<li class="tab-content-list__item tab-content">
 							<div class="tab-content__desk">
 								<h3 class="title">Доставка</h3>
 								<p class="tab-content__text">Мы с удовольствием доставим ваш товар прямо<br>
@@ -292,7 +292,7 @@
 								<img src="img/services/delivery.png" width="468" height="261" alt="Машина">
 							</div>
 						</li>
-						<li class="tab-content-list__item tab-content ">
+						<li class="tab-content-list__item tab-content visually-hidden">
 							<div class="tab-content__desk">
 								<h3 class="title-2">Гарантия</h3>
 								<p class="tab-content__text">
@@ -352,27 +352,6 @@
 				</div> <!--/contacts-->
 			</div> <!--/container-->
 		</section> <!--/about-company-->
-
-		<!--write-us-->
-		<section class="write-us">
-			<h2 class="visually-hidden">Оформить заказ</h2>
-			<form action="https://echo.htmlacademy.ru" method="POST">
-				<div>
-					<label for="name">Ваше имя:</label>
-					<input type="text" name="name" id="name" placeholder="Имя Фамилия">
-				</div>
-				<div>
-					<label for="email">Ваш e-mail:</label>
-					<input type="email" id="email" placeholder="email@example.com">
-				</div>
-				<div>
-					<label for="text">Текст письма:</label>
-					<textarea id="text" placeholder="В свободной форме"></textarea>
-				</div>
-				<button type="submit">Оформить заказ</button>
-			</form>
-			<button class="btn-close" type="button">Закрыть</button>
-		</section>
 	</main>
 
 	<footer class="footer">
@@ -475,7 +454,42 @@
 			</div> <!--/container-->
 		</div> <!--/footer__bottom-->
 	</footer>
-	
+
+	<!--write-us-->
+
+	<div class="modal modal-write-us">
+		<section class="modal__inner modal-write-us__inner">
+			<h2 class="visually-hidden">Оформить заказ</h2>
+			<form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+				<div class="modal-form__body">
+					<div class="modal-form__box">
+						<label for="name">Ваше имя:</label><br>
+						<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+					</div>
+					<div class="modal-form__box">
+						<label for="email">Ваш e-mail:</label><br>
+						<input type="email" id="email" placeholder="email@example.com">
+					</div>
+					<div class="modal-form__box">
+						<label for="text">Текст письма:</label><br>
+						<textarea id="text" placeholder="В свободной форме"></textarea>
+					</div>
+				</div>
+				<div class="modal-form__footer">
+					<button class="btn" type="submit">Отправить</button>
+				</div>
+			</form>
+			<button class="modal__close" type="button" aria-label="Закрыть"></button>
+		</section>
+	</div>
+
+	<div class="modal modal-map">
+		<section class="modal__inner modal-map__inner">
+				<h2 class="visually-hidden">Как до нас добраться</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615747317!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1591647495999!5m2!1sru!2sby" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></iframe>
+				<button class="modal__close" type="button" aria-label="Закрыть"></button>
+		</section>
+	</div>
 
 </body>
 </html>
