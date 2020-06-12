@@ -364,7 +364,7 @@ input[type="radio"].visually-hidden {
 	left: 18px;
 }
 
-.reg-btn svg:hover {
+.reg-btn:hover svg {
  fill: var(--basic-grey);
 }
 
