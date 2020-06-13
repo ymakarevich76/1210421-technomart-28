@@ -217,7 +217,7 @@ input[type="radio"].visually-hidden {
 	color: var(--basic-white);
 }
 
-.search svg:hover {
+.search:hover svg {
 	fill: var(--basic-white);
 }
 
@@ -252,7 +252,7 @@ input[type="radio"].visually-hidden {
 	fill: var(--special-grey-icon);
 }
 
-.header__top-btn svg:hover {
+.header__top-btn:hover svg {
 	fill: var(--basic-white);
 }
 
@@ -394,6 +394,10 @@ input[type="radio"].visually-hidden {
 	fill: var(--special-grey);
 }
 
+.box-accaunt__profile:hover svg {
+	fill: var(--special-grey);
+}
+
 .box-accaunt__top svg:active {
 	fill: var(--special-grey-light);
 }
@@ -415,6 +419,8 @@ input[type="radio"].visually-hidden {
 	margin-top: -10px;
 	right: 207px;
 }
+
+
 
 .box-accaunt__logout {
 	position: relative;
