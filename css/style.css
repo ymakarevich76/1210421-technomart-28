@@ -287,7 +287,7 @@ input[type="radio"].visually-hidden {
 	background-color: var(--special-light);
 	display: flex;
 	justify-content: space-between;
-	padding-top: 43px;
+	padding-top: 44px;
 	padding-bottom: 40px;
 }
 
@@ -298,13 +298,13 @@ input[type="radio"].visually-hidden {
 	margin-right: 30px;
 	padding-left: 30px;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 23px;
 	font-style: italic;
 	color: var(--basic-red);
 }
 
 .header__contacts {
-	padding-top: 10px;
+	padding-top: 9px;
 	margin-right: 10px;
 }
 
@@ -334,7 +334,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header__box-reg-btn {
-	padding-top: 15px;
+	padding-top: 14px;
 }
 
 .reg-btn {
@@ -621,8 +621,8 @@ input[type="radio"].visually-hidden {
 
 .slider__header {
 	background-color: var(--special-black-opacity);
-	padding-bottom: 14px;
-	margin-bottom: 103px;
+	padding-bottom: 15px;
+	margin-bottom: 104px;
 	position: relative;
 	z-index: 1000;
 }
@@ -632,7 +632,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-top: 24px;
 	padding-left: 25px;
-	padding-bottom: 7px;
+	padding-bottom: 5px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 36px;
@@ -839,7 +839,7 @@ input[type="radio"].visually-hidden {
 
 .card__new-price {
 	color: var(--basic-white);
-	background:  url('/img/products-card/red-button.svg') no-repeat center;
+	background: transparent url('/img/products-card/red-button.svg') no-repeat center;
 	width: 141px;
 	height: 38px;
 	margin-left: 34px;
@@ -966,7 +966,7 @@ input[type="radio"].visually-hidden {
 .tab-content__desk .title {
 	color: var(--basic-grey);
 	padding-top: 0px;
-	padding-bottom: 27px;
+	padding-bottom: 29px;
 }
 
 .tab-content__desk .title-2 {
@@ -977,7 +977,6 @@ input[type="radio"].visually-hidden {
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', Arial, sans-serif;
-	line-height: 25px;
 	padding-bottom: 34px;
 }
 
@@ -1041,14 +1040,14 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	list-style: none;
 	font-size: 18px;
-	line-height: 23px;
+	line-height: 24px;
 	position: relative;
 	padding-left: 37px;
 	margin-bottom: 15px;
 }
 
 .list__item {
-	padding-bottom: 13px;
+	padding-bottom: 12px;
 }
 
 .list__item:nth-child(1)::before,
@@ -1249,19 +1248,19 @@ fieldset {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--special-grey-range);
+  background-color: var(--special-grey-range);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: var(--special-green-range);
+  background-color: var(--special-green-range);
 }
 
 .range-controls .toggle {
 	width: 20px;
   height: 20px;
-	background: url(/img/catalog-box-left/filter-button.svg) no-repeat center;
+	background: var(--basic-white) url(/img/catalog-box-left/filter-button.svg) no-repeat center;
 	position: absolute;
 	top: 31px;
 	left: 0;
@@ -1297,7 +1296,7 @@ fieldset {
   color: #283136;
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background-color: #f1f1f1;
   font-family: inherit;
   font-size: inherit;
 }
@@ -1349,7 +1348,7 @@ fieldset {
 	top: -2px;
 	width: 24px;
 	height: 23px;
-	background: url('/img/catalog-box-left/checkbox-off.svg');
+	background: var(--basic-grey-light) url('/img/catalog-box-left/checkbox-off.svg');
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1359,7 +1358,7 @@ fieldset {
 	left: -36px;
 	width: 25px;
 	height: 24px;
-	background: url(/img/catalog-box-left/checkbox-on.svg);
+	background: var(--basic-grey-light) url(/img/catalog-box-left/checkbox-on.svg);
 }
 
 .filter-input-radio + label::before {
@@ -1369,7 +1368,7 @@ fieldset {
 	top: -2px;
 	width: 24px;
 	height: 23px;
-	background: url('/img/catalog-box-left/radio-off.svg');
+	background: var(--basic-grey-light) url('/img/catalog-box-left/radio-off.svg');
 }
 
 .filter-input-radio:checked + label::after {
@@ -1379,7 +1378,7 @@ fieldset {
 	left: -36px;
 	width: 25px;
 	height: 24px;
-	background: url(/img/catalog-box-left/radio-on.svg);
+	background: var(--basic-grey-light) url(/img/catalog-box-left/radio-on.svg);
 }
 
 .filter__btn {
@@ -1713,7 +1712,7 @@ fieldset {
 	right: 10px;
   width: 22px;
 	height: 22px;
-	background: url('/img/contacts/icon-close.svg');
+	background: var(--basic-red) url('/img/contacts/icon-close.svg');
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -1786,6 +1785,7 @@ fieldset {
 
 .modal-form__box label {
 	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: 10px;
 }
 
@@ -1796,4 +1796,52 @@ fieldset {
 
 .modal-form__footer .btn {
 	width: 100%;
+}
+
+.modal-show {
+	display: flex;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
