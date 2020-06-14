@@ -94,7 +94,7 @@
       <div class="container">
         <h2 class="visually-hidden">Каталог</h2>
         <div class="catalog-list">
-          <div class="catalog-list__item catalog ">
+          <div class="catalog-list__item catalog new">
             <h2 class="catalog__title">Материалы</h2>
             <a href="#" class="catalog__btn">На любой вкус</a>
           </div>
@@ -162,7 +162,7 @@
 						</div>
 					</li>
           <li class="products-card__item products-card__item--col-4">
-						<div class="card card--new">
+						<div class="card new">
 							<div class="card__wrap-img">
 								<img class="card__img" src="img/products-card/bosсh-3000.jpg" width="127" height="112" alt="Bosch 3000">
 							</div> <!--/card__wrap-img-->
@@ -190,7 +190,7 @@
 						</div>
           </li>
           <li class="products-card__item products-card__item--col-4">
-						<div class="card card--new">
+						<div class="card new">
 							<div class="card__wrap-img">
 								<img class="card__img" src="img/products-card/bosсh-2000.jpg" width="127" height="112" alt="Bosch 2000">
 							</div>
@@ -345,9 +345,10 @@
 					<p class="contacts__text">Вы можете забрать товар сами,<br>
 					заехав в наш офис:</p>
 					<div class="map">
-						<img src="img/contacts/map.jpg" width="300" height="158" alt="Карта">
+						<a href="map.html" class="map__link">
+							<img src="img/contacts/map.jpg" width="300" height="158" alt="Карта">
+						</a>
 					</div>
-					<button class="btn-close visually-hidden" type="button">Закрыть</button>
 					<a href="writeus.html" class="btn modal-link">Заблудились? Напишите нам!</a>
 				</div> <!--/contacts-->
 			</div> <!--/container-->
@@ -488,11 +489,12 @@
 				<h2 class="visually-hidden">Как до нас добраться</h2>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651616!2d30.320894615747317!3d59.938794181876204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1591647495999!5m2!1sru!2sby" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></iframe>
 				<div><img src="/img/contacts/map-big-size.png" width="943" height="449" alt="Офис компании по адресу ул. Большая Конюшенная 19, Санкт-Петербург"></div>
-				<button class="modal__close" type="button" aria-label="Закрыть"></button>
+				<button class="modal__close map-close" type="button" aria-label="Закрыть"></button>
 		</section>
 	</div>
 
 	<script src="/js/write-us.js"></script>
+	<script src="/js/map.js"></script>
 
 </body>
 </html>
