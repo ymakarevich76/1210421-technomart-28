@@ -1266,7 +1266,7 @@ fieldset {
 .range-controls .toggle {
 	width: 20px;
   height: 20px;
-	background: var(--basic-white) url(/img/catalog-box-left/filter-button.svg) no-repeat center;
+	background: transparent url(/img/catalog-box-left/filter-button.svg) no-repeat center;
 	position: absolute;
 	top: 31px;
 	left: 0;
@@ -1718,7 +1718,7 @@ fieldset {
 	right: 10px;
   width: 22px;
 	height: 22px;
-	background: var(--basic-red) url('/img/contacts/icon-close.svg');
+	background: transparent url('/img/contacts/icon-close.svg');
   background-color: transparent;
   border: 0;
   cursor: pointer;
