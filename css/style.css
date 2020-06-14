@@ -323,7 +323,7 @@ input[type="radio"].visually-hidden {
 	display: block;
 	width: 19px;
 	height: 19px;
-	background: var(--basic-grey-light) url(/img/header/icon-phone.svg) no-repeat;
+	background: var(--basic-grey-light) url(../img/header/icon-phone.svg) no-repeat;
 	position: absolute;
 	top: 50%;
 	margin-top: -10px;
@@ -549,24 +549,24 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list__item:nth-child(1) {
-	background: var(--special-yellow) url('/img/catalog/icon-1.svg') no-repeat 213px 31px;
+	background: var(--special-yellow) url('../img/catalog/icon-1.svg') no-repeat 213px 31px;
 	grid-area: y;
 	position: relative;
 }
 .catalog-list__item:nth-child(2) {
-	background: var(--special-blue) url('/img/catalog/icon-2.svg') no-repeat 194px 34px;
+	background: var(--special-blue) url('../img/catalog/icon-2.svg') no-repeat 194px 34px;
 	grid-area: b;
 }
 .catalog-list__item:nth-child(3) {
-	background: var(--special-purple) url('/img/catalog/icon-3.svg') no-repeat 191px 31px;
+	background: var(--special-purple) url('../img/catalog/icon-3.svg') no-repeat 191px 31px;
 	grid-area: p;
 }
 .catalog-list__item:nth-child(4) {
-	background: var(--special-green-light) url('/img/catalog/icon-4.svg') no-repeat 195px 26px;
+	background: var(--special-green-light) url('../img/catalog/icon-4.svg') no-repeat 195px 26px;
 	grid-area: g;
 }
 .catalog-list__item:nth-child(5) {
-	background: var(--special-yellow-dark) url('/img/catalog/icon-5.svg') no-repeat 191px 32px;
+	background: var(--special-yellow-dark) url('../img/catalog/icon-5.svg') no-repeat 191px 32px;
 	grid-area: yd;
 }
 
@@ -613,7 +613,7 @@ input[type="radio"].visually-hidden {
 
 .slider__item::before {
 	content: "";
-	background: url(/img/catalog/icon-left.svg) no-repeat;
+	background: url(../img/catalog/icon-left.svg) no-repeat;
 	position: absolute;
 	display: block;
 	width: 22px;
@@ -625,7 +625,7 @@ input[type="radio"].visually-hidden {
 
 .slider__item::after {
 	content: "";
-	background:  url(/img/catalog/icon-right.svg) no-repeat;
+	background:  url(../img/catalog/icon-right.svg) no-repeat;
 	position: absolute;
 	display: block;
 	width: 22px;
@@ -823,7 +823,7 @@ input[type="radio"].visually-hidden {
 
 .card__btn-buy::before {
 	content: "";
-	background: url(/img/products-card/icon-cart.svg) no-repeat;
+	background: url(../img/products-card/icon-cart.svg) no-repeat;
 	display: block;
 	position: absolute;
 	width: 15px;
@@ -872,7 +872,7 @@ input[type="radio"].visually-hidden {
 
 .card__new-price {
 	color: var(--basic-white);
-	background: url('/img/products-card/red-button.svg') no-repeat center;
+	background: url('../img/products-card/red-button.svg') no-repeat center;
 	display: block;
 	width: 141px;
 	height: 38px;
@@ -962,7 +962,7 @@ input[type="radio"].visually-hidden {
 
 .tab-btn-list::after {
 	content: "";
-	background: url('/img/services/object.png') no-repeat;
+	background: url('../img/services/object.png') no-repeat;
 	position: absolute;
 	display: block;
 	width: 10px;
@@ -1168,7 +1168,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(1)::after {
 	content: "";
-	background: url('/img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1180,7 +1180,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(2)::after {
 	content: "";
-	background: url('/img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1192,7 +1192,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(3)::after {
 	content: "";
-	background: url('/img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1313,7 +1313,7 @@ fieldset {
 	width: 20px;
 	height: 20px;
 	display: block;
-	background: var(--basic-grey-light) url(/img/catalog-box-left/filter-button.svg) no-repeat center;
+	background: var(--basic-grey-light) url(../img/catalog-box-left/filter-button.svg) no-repeat center;
 	position: absolute;
 	top: 31px;
 	left: 0;
@@ -1408,7 +1408,7 @@ input[type=number] {
 	display: block;
 	width: 23px;
 	height: 23px;
-	background: url('/img/catalog-box-left/checkbox-off.svg') no-repeat;
+	background: url('../img/catalog-box-left/checkbox-off.svg') no-repeat;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1419,7 +1419,7 @@ input[type=number] {
 	display: block;
 	width: 27px;
 	height: 23px;
-	background: url(/img/catalog-box-left/checkbox-on.svg) no-repeat;
+	background: url(../img/catalog-box-left/checkbox-on.svg) no-repeat;
 }
 
 .filter-input-radio + label::before {
@@ -1430,7 +1430,7 @@ input[type=number] {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background: url('/img/catalog-box-left/radio-off.svg') no-repeat;
+	background: url('../img/catalog-box-left/radio-off.svg') no-repeat;
 }
 
 .filter-input-radio:checked + label::after {
@@ -1441,7 +1441,7 @@ input[type=number] {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background: url(/img/catalog-box-left/radio-on.svg) no-repeat;
+	background: url(../img/catalog-box-left/radio-on.svg) no-repeat;
 }
 
 .filter__btn {
@@ -1773,7 +1773,7 @@ input[type=number] {
 	right: 10px;
   width: 22px;
 	height: 22px;
-	background: transparent url('/img/contacts/icon-close.svg');
+	background: transparent url('../img/contacts/icon-close.svg');
   background-color: transparent;
   border: 0;
 	cursor: pointer;
