@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root {
 	--basic-black: #000000;
 	--basic-light-black: #1D2739;
@@ -633,8 +640,8 @@ input[type="radio"].visually-hidden {
 	display: grid;
 	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	    -ms-grid-rows: auto 20px auto 20px auto;
-	        grid-template-areas: 
+	        -ms-grid-rows: auto 20px auto 20px auto;
+	            grid-template-areas: 
 		"y b p"
 		"sl sl g"
 		"sl sl yd";
