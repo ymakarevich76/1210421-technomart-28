@@ -1,4 +1,6 @@
 var mapLink = document.querySelector(".map__link");
+
+if(mapLink) {
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".map-close");
 
@@ -20,24 +22,25 @@ window.addEventListener("keydown", function(evt) {
 		}
 	}
 });
-
-
+}
 // ======================================================
 var modalLink = document.querySelector(".modal-link");
-var modalPopup = document.querySelector(".modal-write-us");
-var modalClose = modalPopup.querySelector(".modal__close");
-var modalForm = modalPopup.querySelector(".modal-form");
-var formName = modalPopup.querySelector(".modal-form__name");
-var formEmail = modalPopup.querySelector(".modal-form__email");
 
-var isStorageSupport = true;
-var storage = "";
-
-try {
-	storage = localStorage.getItem("name");
-} catch (err) {
-	isStorageSupport = false;
-}
+if(modalLink) {
+	var modalPopup = document.querySelector(".modal-write-us");
+	var modalClose = modalPopup.querySelector(".modal-close");
+	var modalForm = modalPopup.querySelector(".modal-form");
+	var formName = modalPopup.querySelector(".modal-form__name");
+	var formEmail = modalPopup.querySelector(".modal-form__email");
+	
+	var isStorageSupport = true;
+	var storage = "";
+	
+	try {
+		storage = localStorage.getItem("name");
+	} catch (err) {
+		isStorageSupport = false;
+	}
 
 modalLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -76,3 +79,36 @@ window.addEventListener("keydown", function(evt) {
 		}
 	}
 });
+}
+// ==========================================================
+
+var basketLink = document.querySelectorAll(".card__btn-buy");
+
+if(basketLink.length) {
+
+var basketModal = document.querySelector(".modal-add-to-basket");
+var basketClose = document.querySelector(".basket-close");
+	
+for (var i = 0; i < basketLink.length; i++) {
+	basketLink[i].addEventListener("click", function(evt) {
+		evt.preventDefault();
+		basketModal.classList.add("modal-show");
+	});
+}
+
+if(basketClose) {
+basketClose.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	basketModal.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+	if(evt.keyCode===27) {
+		if(basketModal.classList.contains("modal-show")) {
+			evt.preventDefault();
+			basketModal.classList.remove("modal-show");
+		}
+	}
+});
+}
+}
