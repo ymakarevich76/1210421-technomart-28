@@ -65,7 +65,7 @@
 
 body {
 	min-width: 960px;
-	font-family: 'Cuprum', "Arial", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -640,8 +640,8 @@ input[type="radio"].visually-hidden {
 	display: grid;
 	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	        -ms-grid-rows: auto 20px auto 20px auto;
-	            grid-template-areas: 
+	                -ms-grid-rows: auto 20px auto 20px auto;
+	                    grid-template-areas: 
 		"y b p"
 		"sl sl g"
 		"sl sl yd";
@@ -664,33 +664,33 @@ input[type="radio"].visually-hidden {
 .catalog-list__item:nth-child(1) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 1;
-	background: var(--special-yellow) url('../img/catalog/icon-1.svg') no-repeat 213px 31px;
+	background: var(--special-yellow) url("../img/catalog/icon-1.svg") no-repeat 213px 31px;
 	grid-area: y;
 	position: relative;
 }
 .catalog-list__item:nth-child(2) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 3;
-	background: var(--special-blue) url('../img/catalog/icon-2.svg') no-repeat 194px 34px;
+	background: var(--special-blue) url("../img/catalog/icon-2.svg") no-repeat 194px 34px;
 	grid-area: b;
 }
 .catalog-list__item:nth-child(3) {
 	-ms-grid-row: 1;
 	-ms-grid-column: 5;
-	background: var(--special-purple) url('../img/catalog/icon-3.svg') no-repeat 191px 31px;
+	background: var(--special-purple) url("../img/catalog/icon-3.svg") no-repeat 191px 31px;
 	grid-area: p;
 }
 .catalog-list__item:nth-child(4) {
 	-ms-grid-row: 3;
 	-ms-grid-column: 5;
-	background: var(--special-green-light) url('../img/catalog/icon-4.svg') no-repeat 195px 26px;
+	background: var(--special-green-light) url("../img/catalog/icon-4.svg") no-repeat 195px 26px;
 	grid-area: g;
 	padding-bottom: 23px;
 }
 .catalog-list__item:nth-child(5) {
 	-ms-grid-row: 5;
 	-ms-grid-column: 5;
-	background: var(--special-yellow-dark) url('../img/catalog/icon-5.svg') no-repeat 191px 32px;
+	background: var(--special-yellow-dark) url("../img/catalog/icon-5.svg") no-repeat 191px 32px;
 	grid-area: yd;
 }
 
@@ -922,7 +922,7 @@ input[type="radio"].visually-hidden {
 }
 
 .new::after {
-	content: 'NEW';
+	content: "NEW";
 	display: block;
 	position: absolute;
 	
@@ -974,7 +974,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
-	font-family: 'Cuprum', "Arial", sans-serif;
+	font-family: "Cuprum", "Arial", sans-serif;
 	text-transform: uppercase;
 	position: absolute;
 	top: 38px;
@@ -1069,7 +1069,7 @@ input[type="radio"].visually-hidden {
 
 .card__new-price {
 	color: var(--basic-white);
-	background: url('../img/products-card/red-button.svg') no-repeat center;
+	background: url("../img/products-card/red-button.svg") no-repeat center;
 	display: block;
 	width: 141px;
 	height: 38px;
@@ -1199,7 +1199,7 @@ input[type="radio"].visually-hidden {
 
 .tab-btn-list::after {
 	content: "";
-	background: url('../img/services/object.png') no-repeat;
+	background: url("../img/services/object.png") no-repeat;
 	position: absolute;
 	display: block;
 	width: 10px;
@@ -1424,7 +1424,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(1)::after {
 	content: "";
-	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url("../img/breadcrumbs/icon-right-small.svg") no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1436,7 +1436,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(2)::after {
 	content: "";
-	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url("../img/breadcrumbs/icon-right-small.svg") no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1448,7 +1448,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li:nth-child(3)::after {
 	content: "";
-	background: url('../img/breadcrumbs/icon-right-small.svg') no-repeat;
+	background: url("../img/breadcrumbs/icon-right-small.svg") no-repeat;
 	display: block;
 	width: 8px;
 	height: 12px;
@@ -1680,7 +1680,7 @@ input[type=number] {
 	display: block;
 	width: 23px;
 	height: 23px;
-	background: url('../img/catalog-box-left/checkbox-off-dark.svg') no-repeat;
+	background: url("../img/catalog-box-left/checkbox-off-dark.svg") no-repeat;
 	opacity: 0.8;
 }
 
@@ -1722,7 +1722,7 @@ input[type=number] {
 	display: block;
 	width: 25px;
 	height: 25px;
-	background: url('../img/catalog-box-left/radio-on-dark.svg') no-repeat;
+	background: url("../img/catalog-box-left/radio-on-dark.svg") no-repeat;
 	opacity: 0.7;
 }
 
@@ -2118,7 +2118,7 @@ input[type=number] {
 	display: block;
   width: 22px;
 	height: 22px;
-	background: url('../img/contacts/icon-close.svg') no-repeat;
+	background: url("../img/contacts/icon-close.svg") no-repeat;
   border: 0;
 	cursor: pointer;
 	z-index: 2;
@@ -2130,6 +2130,8 @@ input[type=number] {
 
 .modal-map__inner img {
 	display: block;
+	width: 943px;
+	height: 449px; 
 }
 
 .modal-map__inner iframe {
@@ -2261,7 +2263,7 @@ input[type=number] {
 	margin-bottom: 10px;
 }
 
-.modal__footer {
+.modal-footer {
 	padding: 36px 80px;
 	background-color: var(--special-modal-grey);
 }
@@ -2270,15 +2272,15 @@ input[type=number] {
 	width: 100%;
 }
 
-.modal-add-to-basket {
+.modal-basket {
 	display: none;
 }
 
-.modal-add-to-basket__inner {
+.modal-basket__inner {
 	width: 620px;
 }
 
-.modal-basket {
+.modal-basket__top {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2293,7 +2295,7 @@ input[type=number] {
 	margin-bottom: 49px;
 }
 
-.modal-basket__text {
+.modal-basket__top-text {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
@@ -2301,7 +2303,7 @@ input[type=number] {
 	line-height: 30px;
 }
 
-.modal-basket::before {
+.modal-basket__top::before {
 	content: "";
 	background: url("../img/basket/icon-mark.svg") no-repeat;
 	display: block;
@@ -2319,12 +2321,12 @@ input[type=number] {
 	        justify-content: center;
 }
 
-.modal-basket__btn {
+.modal-basket__footer-btn {
 	margin: 0;
 	min-width: 192px;
 }
 
-.modal-basket__btn--white {
+.modal-basket__footer-btn--white {
 	background-color: var(--basic-white);
 	color: var(--basic-black);
 	margin-left: 10px;
