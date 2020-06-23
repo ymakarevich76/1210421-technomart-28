@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
 :root {
 	--basic-black: #000000;
 	--basic-light-black: #1D2739;
@@ -376,10 +369,6 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 	padding-top: 44px;
 	padding-bottom: 40px;
-}
-
-. {
-	width: 33.3333%;
 }
 
 .header__desc {
@@ -2263,7 +2252,7 @@ input[type=number] {
 	margin-bottom: 10px;
 }
 
-.modal-footer {
+.modal__footer {
 	padding: 36px 80px;
 	background-color: var(--special-modal-grey);
 }
