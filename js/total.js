@@ -53,11 +53,13 @@ modalLink.addEventListener('click', function (evt) {
 		formName.focus();
 	}
 });
+
 modalClose.addEventListener('click', function (evt) {
 	evt.preventDefault();
 	modalPopup.classList.remove('modal-show');
 	modalPopup.classList.remove('modal-error');
 });
+
 modalForm.addEventListener('submit', function(evt) {
 	if(!formName.value || !formEmail.value) {
 	evt.preventDefault();
@@ -70,6 +72,7 @@ modalForm.addEventListener('submit', function(evt) {
 		}
 	}
 });
+
 window.addEventListener('keydown', function(evt) {
 	if(evt.keyCode === 27) {
 		if(modalPopup.classList.contains('modal-show')) {
@@ -81,7 +84,6 @@ window.addEventListener('keydown', function(evt) {
 });
 }
 // ==========================================================
-
 var basketLink = document.querySelectorAll('.card__btn-buy');
 
 if(basketLink.length) {

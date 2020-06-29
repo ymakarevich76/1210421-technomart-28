@@ -1,6 +1,7 @@
 var basketLink = document.querySelectorAll('.card__btn-buy');
 var basketModal = document.querySelector('.modal-basket');
 var basketClose = document.querySelector('.basket-close');
+
 for (var i = 0; i < basketLink.length; i++) {
 	basketLink[i].addEventListener('click', function(evt) {
 		evt.preventDefault();

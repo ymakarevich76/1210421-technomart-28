@@ -4,6 +4,7 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
+
 :root {
 	--basic-black: #000000;
 	--basic-light-black: #1D2739;
@@ -46,6 +47,7 @@
 	--special-black: rgba(0, 0, 0, 0.15);
 	--special-black-opacity: rgba(0, 0, 0, 0.3);
 	--special-modal-grey: #F4F4F4;
+	--special--border-grey: #405069;
 
 }
 
@@ -204,6 +206,7 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
+	display: inline-block;
 	width: 220px;
 	height: 100%;
 	
@@ -214,7 +217,7 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0 5px 0 var(--special-red-dark);
 }
 
-.header__logo {
+.header__top .logo {
 	padding-top: 13px;
 }
 
@@ -636,8 +639,8 @@ input[type="radio"].visually-hidden {
 	display: grid;
 	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
-	                    -ms-grid-rows: auto 20px auto 20px auto;
-	                        grid-template-areas: 
+	                        -ms-grid-rows: auto 20px auto 20px auto;
+	                            grid-template-areas: 
 		"y b p"
 		"sl sl g"
 		"sl sl yd";
@@ -740,29 +743,24 @@ input[type="radio"].visually-hidden {
 	grid-area: sl;
 }
 
-.box-arrow--prev {
-	background: url(../img/catalog/icon-left.svg) no-repeat;
+.box-arrow {
 	position: absolute;
 	display: block;
 	width: 22px;
 	height: 40px;
 	top: 122px;
-	left: 25px;
 	z-index: 1000;
 	border: none;
 }
 
+.box-arrow--prev {
+	background: url(../img/catalog/icon-left.svg) no-repeat;
+	left: 25px;
+}
+
 .box-arrow--next {
-	content: "";
 	background:  url(../img/catalog/icon-right.svg) no-repeat;
-	position: absolute;
-	display: block;
-	width: 22px;
-	height: 40px;
-	top: 122px;
 	right: 20px;
-	z-index: 1000;
-	border: none;
 }
 
 .slider {
@@ -966,7 +964,6 @@ input[type="radio"].visually-hidden {
 
 .card__box-btn {
 	display: none;
-	border-radius: 2px;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
@@ -988,6 +985,7 @@ input[type="radio"].visually-hidden {
 	        box-shadow: 0 3px 0 var(--special-green-buy);
 	padding: 10px 20px 8px 34px;
 	margin-bottom: 13px;
+	border-radius: 2px;
 }
 
 .card__btn-buy:hover {
@@ -1002,7 +1000,10 @@ input[type="radio"].visually-hidden {
 	display: block;
 	color: var(--basic-grey);
 	padding: 9px 10px 7px;
+	border-radius: 2px;
+	border: 3px solid var(--basic-green);
 }
+
 
 .card__btn-bookmarks:hover {
 	border: 3px solid var(--basic-grey);
@@ -1024,10 +1025,6 @@ input[type="radio"].visually-hidden {
 	margin-top: -8px;
 	left: 30px;
 	opacity: 0.3;
-}
-
-.card__btn-bookmarks {
-	border: 2px solid var(--basic-green);
 }
 
 .card__title {
@@ -1177,9 +1174,6 @@ input[type="radio"].visually-hidden {
 }
 
 .tab-btn-list {
-	font-weight: 700;
-	font-size: 21px;
-	line-height: 30px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1206,11 +1200,25 @@ input[type="radio"].visually-hidden {
 }
 
 .tab-btn-list__btn {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 30px;
 	background-color: var(--basic-grey);
 	color: var(--basic-white);
-	display: block;
-	padding: 15px 20px 17px 22px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 14px 23px 16px;
+	border: none;
+	border-top: 1px solid var(--special--border-grey);
+	border-bottom: 1px solid var(--basic-grey-dark);
+	min-width: 240px;
+	text-align: left;
+}
 
+.tab-btn-list__item:first-child button {
+	border-top: none;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .tab-btn-list__btn:hover {
@@ -1569,7 +1577,7 @@ fieldset {
 
 .range-controls .toggle {
 	width: 20px;
-	height: 20px;
+	height: 23px;
 	display: block;
 	background: var(--basic-grey-light) url(../img/catalog-box-left/filter-button.svg) no-repeat center;
 	position: absolute;
@@ -1786,7 +1794,7 @@ input[type=number] {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	margin-right: 26px;
+	margin-right: 23px;
 }
 
 .sorting__list li {
@@ -1811,7 +1819,7 @@ input[type=number] {
 
 .sorting-icon {
 	fill: var(--special-grey-light);
-	margin-left: 20px;
+	margin-left: 22px;
 }
 
 .sorting-icon--active {
@@ -1904,7 +1912,7 @@ input[type=number] {
 	        justify-content: space-between;
 }
 
-.footer__logo {
+.footer__top .logo {
 	height: 63px;
 	padding-top: 20px;
 	margin-bottom: 27px;
