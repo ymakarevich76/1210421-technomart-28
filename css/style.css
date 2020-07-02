@@ -2176,14 +2176,10 @@ input[type=number] {
 }
 
 .modal-form__box input,
-.modal-form__box textarea {
-	width: 100%;
-}
-
-.modal-form__box input,
 .modal-form__box textarea{
+	width: 100%;
 	border: 2px solid var(--special-grey-light);
-	padding: 7px 9px;
+	padding: 7px 9px 5px;
 	font-size: 13px;
 	line-height: 24px;
 	font-family: "PT Sans", "Arial", sans-serif;
