@@ -136,11 +136,11 @@ img {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
 	color: var(--basic-white);
-	vertical-align: middle;
 	text-transform: uppercase;
 	background-color: var(--basic-red);
 	border: none;
@@ -207,6 +207,7 @@ input[type="radio"].visually-hidden {
 
 .logo {
 	display: inline-block;
+	vertical-align: middle;
 	width: 220px;
 	height: 100%;
 	
